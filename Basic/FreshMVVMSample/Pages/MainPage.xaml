@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FreshMVVMSample"
+             x:Class="FreshMVVMSample.MainPage"
+             Title="First Page">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     VerticalOptions="CenterAndExpand" 
+                     HorizontalOptions="CenterAndExpand"
+                     Margin="0,0,0,10">
+            <Label Text="{Binding MainPageLabel}" 
+                   VerticalOptions="Center"       
+                   HorizontalOptions="Center"/>
+            <Button Text="Goto Second Page" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="FillAndExpand"
+                    Command="{Binding GotoSecondPageCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
