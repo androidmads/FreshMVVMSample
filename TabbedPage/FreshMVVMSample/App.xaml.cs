@@ -13,11 +13,10 @@ namespace FreshMVVMSample
             {
                 InitializeComponent();
 
-                var masterNavigation = new FreshMasterDetailNavigationContainer();
-                masterNavigation.Init("Menu");
-                masterNavigation.AddPage<Detail1PageModel>("First Page", null);
-                masterNavigation.AddPage<Detail2PageModel>("Second Page", null);
-                MainPage = masterNavigation;
+                var tabbedNavigation = new FreshTabbedNavigationContainer();
+                tabbedNavigation.AddTab<Detail1PageModel>("First Tab", null);
+                tabbedNavigation.AddTab<Detail2PageModel>("Second Tab", null);
+                MainPage = tabbedNavigation;
             }
             catch (Exception ex)
             {
