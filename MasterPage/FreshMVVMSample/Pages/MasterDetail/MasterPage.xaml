@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FreshMVVMSample.MasterPage"
+             Title="Master Page">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand"
+                     VerticalOptions="Start">
+            <Button Text="Detail Page 1"
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="DetailButton1Clicked"/>
+            <Button Text="Detail Page 2"
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="FillAndExpand" 
+                    Clicked="DetailButton2Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

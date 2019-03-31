@@ -10,11 +10,22 @@ using Xamarin.Forms.Xaml;
 namespace FreshMVVMSample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Detail2Page : ContentPage
+    public partial class MasterPage : ContentPage
     {
-        public Detail2Page()
+        public MasterPage()
         {
             InitializeComponent();
+        }
+
+        private void DetailButton1Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DetailButton2Clicked(object sender, EventArgs e)
+        {
+
+
         }
     }
 }

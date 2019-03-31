@@ -13,11 +13,17 @@ namespace FreshMVVMSample
             {
                 InitializeComponent();
 
-                var masterNavigation = new FreshMasterDetailNavigationContainer();
-                masterNavigation.Init("Menu");
-                masterNavigation.AddPage<Detail1PageModel>("First Page", null);
-                masterNavigation.AddPage<Detail2PageModel>("Second Page", null);
-                MainPage = masterNavigation;
+                //Default Master Detail Page with Fresh MVVM
+                //var navigationContainer = new FreshMasterDetailNavigationContainer();
+                //navigationContainer.Init("Menu");
+                //navigationContainer.AddPage<Detail1PageModel>("First Page", null);
+                //navigationContainer.AddPage<Detail2PageModel>("Second Page", null);
+
+                //To create Custom Master Detail Page with Fresh MVVM
+                var page = FreshPageModelResolver.ResolvePageModel<MainPageModel>();
+                var navigationContainer = new FreshNavigationContainer(page);
+
+                MainPage = navigationContainer;
             }
             catch (Exception ex)
             {

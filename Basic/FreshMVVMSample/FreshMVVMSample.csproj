@@ -38,18 +38,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PageModels\MasterDetail\Detail2PageModel.cs" />
-    <Compile Include="PageModels\MasterDetail\Detail1PageModel.cs" />
     <Compile Include="PageModels\SecondPageModel.cs" />
     <Compile Include="PageModels\MainPageModel.cs" />
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\MasterDetail\Detail1Page.xaml.cs">
-      <DependentUpon>Detail1Page.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\MasterDetail\Detail2Page.xaml.cs">
-      <DependentUpon>Detail2Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\SecondPage.xaml.cs">
       <DependentUpon>SecondPage.xaml</DependentUpon>
@@ -88,18 +80,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\SecondPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Pages\MasterDetail\Detail1Page.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Pages\MasterDetail\Detail2Page.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -38,13 +38,25 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageModels\MainPageModel.cs" />
     <Compile Include="PageModels\MasterDetail\Detail2PageModel.cs" />
     <Compile Include="PageModels\MasterDetail\Detail1PageModel.cs" />
+    <Compile Include="PageModels\MasterDetail\MasterPageModel.cs" />
+    <Compile Include="PageModels\MasterDetail\MyMasterDetailPageModel.cs" />
+    <Compile Include="Pages\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MasterDetail\Detail1Page.xaml.cs">
       <DependentUpon>Detail1Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MasterDetail\Detail2Page.xaml.cs">
       <DependentUpon>Detail2Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MasterDetail\MasterPage.xaml.cs">
+      <DependentUpon>MasterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MasterDetail\MyMasterDetailPage.xaml.cs">
+      <DependentUpon>MyMasterDetailPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -82,6 +94,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\MasterDetail\Detail2Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\MasterDetail\MasterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\MasterDetail\MyMasterDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
