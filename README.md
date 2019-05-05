@@ -9,3 +9,6 @@ https://github.com/androidmads/FreshMVVMSample/tree/master/MasterPage
 
 ## Tabbed Page
 https://github.com/androidmads/FreshMVVMSample/tree/master/TabbedPage
+
+## Rg Popup
+https://github.com/androidmads/FreshMVVMSample/tree/master/Popup
